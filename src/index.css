@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   width: 695px;
   height: 640px;
-
+  position: relative;
 
   
 }
@@ -142,14 +142,15 @@ body {
 
 /**************dnd*************/
 .dnd{
+  position: absolute;
   height: 97%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 3fr;
   grid-row-gap: 5px;
-  width: 95%;
+  width: 40%;
   justify-self: right;
-
+  
 
 }
 .dnd__frame{

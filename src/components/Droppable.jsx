@@ -18,12 +18,12 @@ function Droppable({ accept, handleDrop, text, children, state, big, style, comp
   const isActive = isOver && canDrop;
 
   return (
-    <div
+    <div 
       
       style={style}
       ref={drop}
     >
-      <div>{text}</div>
+      <span  >{text}</span>
       {children}
     
     </div>

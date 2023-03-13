@@ -19,13 +19,13 @@ function Draggable({ children, type, item, text, style, hideWhenDrag, state, com
   }
 
   return (
-    <span
+    <div 
       
       ref={drag}
     >
-      <span>{component}</span>
+      <span >{component}</span>
       {children}
-    </span>
+    </div>
   );
 }
 

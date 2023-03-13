@@ -8,6 +8,7 @@ import OperationButtons from './OperationButtons';
 import Numbers from './Numbers';
 import EqualsSign from './EqualsSign';
 import DndComponent from './DndComponent';
+import RuntimeToggle from './RuntimeToggle';
 
 function Main(){
 
@@ -63,7 +64,9 @@ function Main(){
         { text: 'EqualsSign', component: <EqualsSign updateCalc={updateCalc} calculate={calculate}/> },
       ]);
 
-      const [box2, setBox2] = useState([]);
+      const [box2, setBox2] = useState([
+       {component: <DndZone/>}
+      ]);
 
   const handleBox1 = (item, monitor, state) => {
     if (state.find((each) => each.text === item.text)) return;
@@ -97,10 +100,13 @@ function Main(){
 
     return <div className="main" >
        <DndProvider backend={HTML5Backend}>
-        <CalculatorZone box1={box1} setBox1={setBox1} />
-        <DndZone >
+        
+       
+        
         <DndComponent box1={box1} setBox1={setBox1} box2={box2} setBox2={setBox2} handleBox1={handleBox1} handleBox2={handleBox2}/>
-      </DndZone>
+        <CalculatorZone box1={box1} setBox1={setBox1} />
+        <RuntimeToggle/>
+      
        </DndProvider>
         
        
