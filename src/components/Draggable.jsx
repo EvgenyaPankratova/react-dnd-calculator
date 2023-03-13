@@ -15,17 +15,17 @@ function Draggable({ children, type, item, text, style, hideWhenDrag, state, com
   );
 
   if (isDragging && hideWhenDrag) {
-    return <div  ref={drag}></div>;
+    return <span  ref={drag}></span>;
   }
 
   return (
-    <div 
-      
+    <span
+    
       ref={drag}
     >
       <span >{component}</span>
       {children}
-    </div>
+    </span>
   );
 }
 

@@ -20,7 +20,7 @@ function Droppable({ accept, handleDrop, text, children, state, big, style, comp
   return (
     <div 
       
-      style={style}
+      
       ref={drop}
     >
       <span  >{text}</span>

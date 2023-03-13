@@ -11,10 +11,10 @@ import DndComponent from "./DndComponent";
 
 function DndZone({ title, children }){
 
-    return <div className="dnd">
+    return <div className="dnd" draggable="false">
+            <RuntimeToggle style={{pointerEvents: 'auto'}}/>
         
-        
-        <div className="frame dnd__frame" > 
+        <div className="frame dnd__frame" draggable="false"> 
         {children}
         
         <div className="icon dnd__frame__icon"><Dnd/> </div>
