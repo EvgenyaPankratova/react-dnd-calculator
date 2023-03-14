@@ -102,7 +102,7 @@ function Main(){
        
        <DndProvider backend={HTML5Backend}>
        <DndComponent box1={box1} setBox1={setBox1} box2={box2} setBox2={setBox2} handleBox1={handleBox1} handleBox2={handleBox2}/>
-       <CalculatorZone box1={box1} setBox1={setBox1} />
+       {/* <CalculatorZone box1={box1} setBox1={setBox1} /> */}
        </DndProvider>
         
        
