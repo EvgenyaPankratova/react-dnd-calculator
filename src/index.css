@@ -239,6 +239,16 @@ body {
 .icon:active{
   color:  #5D5FEF;
 }
+.runtime-main{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ padding-top: 30px;
+ padding-right: 55px;
+}
+.runtime-calculator{
+  margin-top: 30px;
+}
 /**************constructor*************/
 .constructor{
   width: 50%;

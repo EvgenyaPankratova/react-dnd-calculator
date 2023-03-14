@@ -3,13 +3,13 @@ import {useDrag} from 'react-dnd';
 
 
 function EqualsSign({calculate, id}){
-  const [{isDragging}, drag] = useDrag(() => ({
-    type: 'equalsSign',
-    item: {id: id},
-    collect: (monitor) => ({
-        isDragging: !!monitor.isDragging(),
-    })
-}))
+//   const [{isDragging}, drag] = useDrag(() => ({
+//     type: 'equalsSign',
+//     item: {id: id},
+//     collect: (monitor) => ({
+//         isDragging: !!monitor.isDragging(),
+//     })
+// }))
 
       return <div className="equals-sign" draggable>
     

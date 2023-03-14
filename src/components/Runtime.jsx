@@ -1,14 +1,11 @@
-import {DndProvider} from 'react-dnd';
-import {HTML5Backend} from 'react-dnd-html5-backend';
-import { useState, useRef } from "react";
+
+import { useState} from "react";
 import CalculatorZone from "./CalculatorZone";
-import DndZone from "./DndZone";
 import Display from "./Display";
 import OperationButtons from './OperationButtons';
 import Numbers from './Numbers';
 import EqualsSign from './EqualsSign';
-import DndComponent from './DndComponent';
-import RuntimeToggle from './RuntimeToggle';
+import RuntimeToggle from "./RuntimeToggle";
 
 function Runtime(){
 
@@ -98,19 +95,24 @@ function Runtime(){
 //     });
 //   };
 
-    return <div className="main" >
+    return <div className="main runtime-main">
+
+
+            <RuntimeToggle style={{pointerEvents: 'auto'}}/>
+
+         
        
-        
-{/*             
+           
+            <div className='calculator runtime-calculator'>
+                <div className="d-grid gap-2">
             <Display calc={calc} result={result}/>
             <OperationButtons updateCalc={updateCalc}/>
             <Numbers createDigits={createDigits} updateCalc={updateCalc}/>
-            <EqualsSign updateCalc={updateCalc} calculate={calculate}/>  */}
-            
-           
+             <EqualsSign updateCalc={updateCalc} calculate={calculate}/>  
+             </div>
+            </div>
 
-        
-       
+            
     </div>
 }
 

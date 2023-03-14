@@ -12,15 +12,15 @@ function RuntimeToggle(){
     return <div className="runtime-toggle">
         
         <div className="runtime">
-        <button type="button" className="runtime__btn btn btn-outline-dark btn-icon">
-        <Link to='/runtime'> <span className="icon" ><Eye/></span>Runtime</Link>
-        </button>
+        <Link to='/runtime'><button type="button" className="runtime__btn btn btn-outline-dark btn-icon">
+        <span className="icon" ><Eye/></span>Runtime
+        </button></Link>
     </div>
 
          <div className="constructor">
-          <button type="button" className="constructor__btn btn btn-outline-dark btn-icon">
-         <Link to='/constructor'><span className="icon"><Arrows/></span>Constructor</Link>
-        </button>
+         <Link to='/constructor'><button type="button" className="constructor__btn btn btn-outline-dark btn-icon">
+         <span className="icon"><Arrows/></span>Constructor
+        </button></Link>
      </div>
 
     </div>
