@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-dnd-calculator/static/css/main.a7604ab6.css",
-    "main.js": "/react-dnd-calculator/static/js/main.2ba028f4.js",
+    "main.js": "/react-dnd-calculator/static/js/main.c786843f.js",
     "index.html": "/react-dnd-calculator/index.html",
     "static/media/dnd.svg": "/react-dnd-calculator/static/media/dnd.ff2a0d409c14819260b08f919e659b64.svg",
     "static/media/eye.svg": "/react-dnd-calculator/static/media/eye.e99d74334ad6397152628e2098cbc42b.svg",
     "static/media/arrows.svg": "/react-dnd-calculator/static/media/arrows.45596f33e8096a35e961d6fc09d02bce.svg",
     "main.a7604ab6.css.map": "/react-dnd-calculator/static/css/main.a7604ab6.css.map",
-    "main.2ba028f4.js.map": "/react-dnd-calculator/static/js/main.2ba028f4.js.map"
+    "main.c786843f.js.map": "/react-dnd-calculator/static/js/main.c786843f.js.map"
   },
   "entrypoints": [
     "static/css/main.a7604ab6.css",
-    "static/js/main.2ba028f4.js"
+    "static/js/main.c786843f.js"
   ]
 }
